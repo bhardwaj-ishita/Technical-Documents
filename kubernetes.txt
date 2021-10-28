@@ -1,0 +1,48 @@
+KUBERNETES
+open source container orchestration tool 
+developed by google
+helps you manage containerized application in diff deployment environments
+
+PROBLEMS
+rise in microservices resulted in  the usage of container technologies
+bcoz containers offer the perfect host for small independent services of microservices
+and tech contains 1000 of containers and it gets complex to manage them
+hence this led to need of container related tech
+
+FEATURES
+high availability i.e no downtime
+high performance or scalability
+disaster recobery i.e backup and restore
+
+KUBERNETES COMPONENTS
+eg. js and database code setup
+node(a vm or server) :- 
+pod - basic or smalles unit of k8s 
+	abstraction over a container
+	creates a running env or layer on top of the container
+	so can directly interact with the container; no need to use docker
+	you only interact with kubernetes layer
+	meant to run one application container inside of it but can include multiple container only if one of them is the main and others are just helper containers
+	
+
+kuberenets provide each pod(not the container) a virtual network i.e. an IP address is provided to each pod
+pods can communicate through the IP address
+efemeral- pods can die easily and then recieve a new ip address when the new pod is recreated
+HENCE SERVICE IS USED
+
+service - permanent ip address attached to each pod
+	lifecycle of pod and service are not connected so even if the pod die the ip address stays
+	
+	external service - to access the service from the browser
+		
+	interenal service - dont't want DB to be accessed by the public hence given an internal service
+	
+	these services are provided accordingly
+
+url of external service is impractical (node ip address. + port no of the service) this is a test purpose
+(end product) secure protocol and end name
+ 
+ingress - for service the request goes to ingress and then it forward it to the service
+
+		
+

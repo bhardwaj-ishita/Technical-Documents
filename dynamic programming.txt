@@ -1,0 +1,14 @@
+DYNAMIC PROGRAMMING
+
+store the repeated states in matrix
+longest common subsequence/string
+
+overlapping sub-problems (sub problems already solved and need to be solved again)
+optimal sub-structure (problems need to be soved to the main problem should be smaller than the main problem)
+recursive
+
+solve side by side and save
+bottom-up approach
+
+base condition
+formula(general expression) 
